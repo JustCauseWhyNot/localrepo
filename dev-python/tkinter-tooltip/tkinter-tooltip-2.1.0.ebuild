@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_11 )
 DISTUTILS_USE_PEP517="setuptools"
 PYTHON_REQ_USE="tk"
 PYPI_NO_NORMALIZE=1
@@ -19,7 +19,7 @@ IUSE="" # todo add doc and doc deps ( sphinx stuff)
 RESTRICT="mirror" #overlay, not goign to be mirrored
 DEPEND=""
 RDEPEND="( ${DEPEND}
-        dev-python/importlib_metadata[${PYTHON_USEDEP}]
+        dev-python/importlib-metadata[${PYTHON_USEDEP}]
         dev-python/pyyaml[${PYTHON_USEDEP}] )"
 BDEPEND=""
 #sphinx-argparse and sphinx-sitemap are in guru
